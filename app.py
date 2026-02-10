@@ -11,3 +11,6 @@ app.config['svm']              = None
 app.config['vectorizer']       = None
 
 app.register_blueprint(sentimentApp)
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=5000)
