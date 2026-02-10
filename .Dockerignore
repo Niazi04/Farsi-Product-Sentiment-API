@@ -1,0 +1,6 @@
+pipeline/
+__pycache__/
+.git
+.gitignore
+.vscode/
+*.ipynb
