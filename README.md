@@ -22,7 +22,7 @@ cd ./realy-discriptive-name-that-isnt-super-long
 # Clone the project
 git clone https://github.com/Niazi04/Farsi-Product-Sentiment-API.git .
 
-#Once you've cloned the project, install dependencies:
+# Once you've cloned the project, install dependencies:
 # Use a virtual environment to avoid version conflicts
 pip install -r requirements.txt
 
@@ -32,20 +32,20 @@ python app.py
 
 2. Using docker
 
-==⚠️ NOTE==: The docker image does **not** include the notebooks for testing or training ML models
+⚠️ **NOTE**: The docker image does **not** include the notebooks for testing or training ML models
 
 If you want to explore the notebooks, clone the repository via GitHub instead.
 
 ```bash
 docker pull nastyhedgeh0g/farsi-product-sentiment-api:FirstStable
 
-docker run -p 5000:5000 nastyhedgeh0g/sentiment-api:FirstStable
+docker run -p 5000:5000 nastyhedgeh0g/farsi-product-sentiment-api:FirstStable
 ```
 
 To use  a different port:
 
 ```bash
-docker run -p 8080:5000 nastyhedgeh0g/sentiment-api:FirstStable
+docker run -p 8080:5000 nastyhedgeh0g/farsi-product-sentiment-api:FirstStable
 ```
 
 ## 🧪 Test the app
@@ -73,7 +73,8 @@ Response body should look like:
 }
 ```
 
-If either 'svm' or 'vectorizer' show `"missing"`, it means they are not found in `./model` directory
+If either 'svm' or 'vectorizer' show `"missing"`, it means they are not found in `./model` directory.
+
 Initially 'model' is not loaded in memory. Because I coded it that way. After your first POST request, it will be loaded in memory
 
 ### 🔮 Get Your First Prediction
